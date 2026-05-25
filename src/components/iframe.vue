@@ -24,13 +24,24 @@
           </a-row>
         </a-form-item>
 
-        <a-form-item label="应用访问地址">
-          <a-input v-model:value="form.appUrl" allow-clear />
-        </a-form-item>
-
-        <a-form-item label="xdaptoken">
-          <a-input v-model:value="form.xdapToken" allow-clear placeholder="请输入 xdaptoken" />
-        </a-form-item>
+        <a-row :gutter="12" class="field-grid">
+          <a-col :xs="24" :md="12">
+            <a-form-item label="应用访问地址">
+              <a-input
+                v-model:value="form.appUrl"
+                allow-clear
+                placeholder="请输入应用访问地址" />
+            </a-form-item>
+          </a-col>
+          <a-col :xs="24" :md="12">
+            <a-form-item label="xdaptoken">
+              <a-input
+                v-model:value="form.xdapToken"
+                allow-clear
+                placeholder="请输入 xdaptoken" />
+            </a-form-item>
+          </a-col>
+        </a-row>
 
         <a-row :gutter="12" class="field-grid">
           <a-col v-for="field in currentFields" :key="field.id" :xs="24" :md="12">
