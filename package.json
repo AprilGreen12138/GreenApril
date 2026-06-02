@@ -6,17 +6,25 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "nodemon src/server/index.js"
   },
   "dependencies": {
+    "@prisma/adapter-better-sqlite3": "^7.8.0",
+    "@prisma/client": "^7.8.0",
     "@supabase/supabase-js": "^2.106.1",
     "ant-design-vue": "^4.2.6",
+    "better-sqlite3": "^12.10.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
     "vue": "^3.5.34",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.6",
     "naive-ui": "^2.44.1",
+    "nodemon": "^3.1.14",
+    "prisma": "^7.8.0",
     "vfonts": "^0.0.3",
     "vite": "^8.0.12"
   }

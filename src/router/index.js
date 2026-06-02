@@ -3,11 +3,15 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 const routes = [
   {
     path: '/',
-    component: () => import('../components/environmentSetup/EnvironmentSetup.vue'),
+    component: () => import('../views/index.vue'),
   },
   {
     path: '/ui-checklist',
     component: () => import('../components/uiChecklist/UiChecklist.vue'),
+  },
+  {
+    path: '/accountbook',
+    component: () => import('../components/AccountBook.vue'),
   },
 ];
 
