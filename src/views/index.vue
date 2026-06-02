@@ -1,16 +1,12 @@
 <template>
-  <button
-    class="frontPageButton"
-    @click="router.push({ path: '/accountbook' })"
-    @mouseenter="change(true)"
-    @mouseleave="change(false)">
+  <button class="frontPageButton" @mouseenter="change(true)" @mouseleave="change(false)">
     {{ buttonText }}
   </button>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import { router } from 'vue-router';
+// import { router } from 'vue-router';
 
 const defaultText = '欢迎来到四月的小屋';
 const hoverText = '进入魔幻世界';
