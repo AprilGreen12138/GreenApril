@@ -1,5 +1,9 @@
 <template>
-  <button class="frontPageButton" @mouseenter="change(true)" @mouseleave="change(false)">
+  <button
+    class="absolute top-1/2 left-1/2 -translate-1/2 text-2xl size-75 rounded-full bg-green-500"
+    @mouseenter="change(true)"
+    @mouseleave="change(false)"
+    @click="handleClick">
     {{ buttonText }}
   </button>
 </template>
@@ -17,16 +21,3 @@ const change = (isEnter) => {
   buttonText.value = isEnter ? hoverText : defaultText;
 };
 </script>
-
-<style scoped>
-.frontPageButton {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-}
-</style>
